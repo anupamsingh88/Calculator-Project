@@ -1,0 +1,94 @@
+body {
+    background-image: url('./new\ calci.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+.calculator {
+    background-color: #000000;
+    border: 1px solid #cdcdcd;
+    border-radius: 10px;
+    box-shadow: 5px 10px 8px rgb(59, 59, 59);
+    text-align: center;
+    max-width: 260px;
+    margin: 0 auto;
+}
+
+#display {
+    width: 90%;
+    border-radius: 10px;
+    font-size: 36px;
+    min-width: 200px;
+    align-border: none;
+    outline: none;
+    text-align: right;
+    padding: 10px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+    padding: 10px;
+}
+button {
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    padding: 15px 0;
+}
+
+.backspace {
+    background-color: #ff704d;
+    color: white;
+}
+
+button:hover {
+    background-color: #ccc;
+}
+
+@keyframes glow {
+    0%, 100% {
+      text-shadow: 0 0 8px rgb(51, 50, 50),
+                   0 0 12px rgba(255,255,255,0.3),
+                   0 0 20px rgba(255,255,255,0.2),
+                   0 0 30px rgba(255,0,0,0.45),
+                   0 0 40px rgba(255,0,0,0.3),
+                   0 0 50px rgba(255,0,0,0.2),
+                   0 0 75px rgba(255,0,0,0.1);
+    }
+    50% {
+      text-shadow: 0 0 5px rgb(255, 255, 255),
+                   0 0 10px rgba(255,255,255,0.5),
+                   0 0 15px rgba(255,255,255,0.25),
+                   0 0 20px rgba(255,0,0,0.65),
+                   0 0 30px rgba(255,0,0,0.45),
+                   0 0 40px rgba(255,0,0,0.25),
+                   0 0 55px rgba(255,0,0,0.15);
+    }
+  }
+  
+ #animated-heading{
+    position: absolute;
+    background-color: #4f5265c2;
+    backdrop-filter:  blur(10px) brightness(90%) contrast(90%);
+    font-size: 5em;
+    margin-right: -1%;
+    margin-top: -30%;
+    color: #fefefe; 
+    text-align: center;
+    text-rendering: auto;
+    justify-content: center;
+    animation: glow 2s infinite alternate ease-in-out;
+    /* Additional styling for heading */
+  }
+  
